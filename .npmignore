@@ -1,0 +1,27 @@
+# Source files (we only want to publish the built dist folder)
+src/
+tsconfig.json
+rollup.config.js
+
+# Development files
+.gitignore
+*.md
+!README.md
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Tests and development tools
+test/
+tests/
+__tests__/
+*.test.*
+*.spec.*
