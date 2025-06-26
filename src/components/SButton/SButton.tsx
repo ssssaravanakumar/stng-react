@@ -49,7 +49,7 @@ export const SButton: React.FC<SButtonProps> = ({
       disabled={disabled}
       onClick={onClick}
     >
-      {children}
+      Comes from STNG-REACT : {children}
     </button>
   );
 };
