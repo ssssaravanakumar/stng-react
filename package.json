@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/stng-react.git"
+    "url": "git+https://github.com/ssssaravanakumar/stng-react.git"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/stng-react#readme",
+  "homepage": "https://github.com/ssssaravanakumar/stng-react#readme",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/stng-react/issues"
+    "url": "https://github.com/ssssaravanakumar/stng-react/issues"
   },
   "keywords": [
     "react",
@@ -34,7 +34,7 @@
     "tailwindcss",
     "typescript"
   ],
-  "author": "Your Name <your.email@example.com>",
+  "author": "ssssaravanakumar career.saravanakumar@gmail.com",
   "license": "MIT",
   "peerDependencies": {
     "react": "^18.0.0",
