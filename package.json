@@ -1,6 +1,6 @@
 {
   "name": "stng-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React component library with SButton and SCard components",
   "type": "module",
   "main": "dist/index.js",
