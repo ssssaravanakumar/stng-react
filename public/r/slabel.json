@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slabel",
+  "type": "registry:component",
+  "title": "SLabel",
+  "description": "A styled label component for form elements",
+  "files": [
+    {
+      "path": "registry/components/ui/slabel.tsx",
+      "content": "import React from \"react\";\n\nexport interface SLabelProps {\n  children: React.ReactNode;\n  htmlFor?: string;\n  size?: \"small\" | \"medium\" | \"large\";\n  weight?: \"normal\" | \"medium\" | \"semibold\" | \"bold\";\n  required?: boolean;\n  disabled?: boolean;\n  error?: boolean;\n  className?: string;\n}\n\nexport const SLabel: React.FC<SLabelProps> = ({\n  children,\n  htmlFor,\n  size = \"medium\",\n  weight = \"medium\",\n  required = false,\n  disabled = false,\n  error = false,\n  className = \"\",\n}) => {\n  const sizeClasses = {\n    small: \"text-sm\",\n    medium: \"text-base\",\n    large: \"text-lg\",\n  };\n\n  const weightClasses = {\n    normal: \"font-normal\",\n    medium: \"font-medium\",\n    semibold: \"font-semibold\",\n    bold: \"font-bold\",\n  };\n\n  const baseClasses = \"block transition-colors duration-200\";\n\n  const stateClasses = error\n    ? \"text-red-700\"\n    : disabled\n    ? \"text-gray-400\"\n    : \"text-gray-700\";\n\n  const labelClass =\n    `${baseClasses} ${sizeClasses[size]} ${weightClasses[weight]} ${stateClasses} ${className}`.trim();\n\n  return (\n    <label htmlFor={htmlFor} className={labelClass}>\n      {children}\n      {required && <span className=\"text-red-500 ml-1\">*</span>}\n    </label>\n  );\n};\n",
+      "type": "registry:component"
+    }
+  ]
+}

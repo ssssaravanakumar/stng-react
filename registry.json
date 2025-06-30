@@ -1,0 +1,103 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "stng-react",
+  "homepage": "https://github.com/ssssaravanakumar/stng-react",
+  "items": [
+    {
+      "name": "sbutton",
+      "type": "registry:component",
+      "title": "SButton",
+      "description": "A customizable button component with Tailwind CSS styling",
+      "files": [
+        {
+          "path": "registry/components/ui/sbutton.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "scard",
+      "type": "registry:component",
+      "title": "SCard",
+      "description": "A flexible card component for displaying content",
+      "files": [
+        {
+          "path": "registry/components/ui/scard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sinput",
+      "type": "registry:component",
+      "title": "SInput",
+      "description": "A customizable input component with validation support",
+      "files": [
+        {
+          "path": "registry/components/ui/sinput.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "scheckbox",
+      "type": "registry:component",
+      "title": "SCheckbox",
+      "description": "A styled checkbox component",
+      "files": [
+        {
+          "path": "registry/components/ui/scheckbox.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sradio",
+      "type": "registry:component",
+      "title": "SRadio",
+      "description": "A styled radio button component",
+      "files": [
+        {
+          "path": "registry/components/ui/sradio.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "stextarea",
+      "type": "registry:component",
+      "title": "STextarea",
+      "description": "A customizable textarea component",
+      "files": [
+        {
+          "path": "registry/components/ui/stextarea.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sselect",
+      "type": "registry:component",
+      "title": "SSelect",
+      "description": "A styled select dropdown component",
+      "files": [
+        {
+          "path": "registry/components/ui/sselect.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slabel",
+      "type": "registry:component",
+      "title": "SLabel",
+      "description": "A styled label component for form elements",
+      "files": [
+        {
+          "path": "registry/components/ui/slabel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

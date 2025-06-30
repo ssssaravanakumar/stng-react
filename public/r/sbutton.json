@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sbutton",
+  "type": "registry:component",
+  "title": "SButton",
+  "description": "A customizable button component with Tailwind CSS styling",
+  "files": [
+    {
+      "path": "registry/components/ui/sbutton.tsx",
+      "content": "import React from \"react\";\n\nexport interface SButtonProps {\n  children: React.ReactNode;\n  variant?: \"primary\" | \"secondary\" | \"danger\" | \"success\";\n  size?: \"small\" | \"medium\" | \"large\";\n  disabled?: boolean;\n  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;\n  type?: \"button\" | \"submit\" | \"reset\";\n  className?: string;\n}\n\nexport const SButton: React.FC<SButtonProps> = ({\n  children,\n  variant = \"primary\",\n  size = \"medium\",\n  disabled = false,\n  onClick,\n  type = \"button\",\n  className = \"\",\n}) => {\n  const baseClasses =\n    \"inline-flex items-center justify-center border-0 rounded font-medium cursor-pointer transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60\";\n\n  const sizeClasses = {\n    small: \"px-3 py-1.5 text-xs min-h-[28px]\",\n    medium: \"px-4 py-2 text-sm min-h-[36px]\",\n    large: \"px-6 py-3 text-base min-h-[44px]\",\n  };\n\n  const variantClasses = {\n    primary:\n      \"bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800 disabled:hover:bg-blue-600\",\n    secondary:\n      \"bg-gray-600 text-white hover:bg-gray-700 active:bg-gray-800 disabled:hover:bg-gray-600\",\n    danger:\n      \"bg-red-600 text-white hover:bg-red-700 active:bg-red-800 disabled:hover:bg-red-600\",\n    success:\n      \"bg-green-600 text-white hover:bg-green-700 active:bg-green-800 disabled:hover:bg-green-600\",\n  };\n\n  const buttonClass =\n    `${baseClasses} ${sizeClasses[size]} ${variantClasses[variant]} ${className}`.trim();\n\n  return (\n    <button\n      type={type}\n      className={buttonClass}\n      disabled={disabled}\n      onClick={onClick}\n    >\n      Comes from STNG-REACT : {children}\n    </button>\n  );\n};\n",
+      "type": "registry:component"
+    }
+  ]
+}
